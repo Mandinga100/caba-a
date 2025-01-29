@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="prefetch" href="index.html">
+    <link rel="prefetch" href="cabana.html">
+    <link rel="prefetch" href="ubicacion.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Posada del Oso</title>
+    <meta name="description" content="Formulario de contacto para la cabaña rústica. Envíanos tus preguntas o comentarios.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="footer-background">
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cabana.html">Cabaña</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Contáctanos</h1>
+        <p>Envíanos tus preguntas o comentarios.</p>
+    </header>
+    <main class="contacto-main">
+        <section>
+            <section>
+                <h2>Formulario de Contacto</h2>
+                <form id="contact-form" action="#" method="post">
+                    <input type="hidden" name="csrf_token" value="TOKEN_GENERADO_POR_EL_SERVIDOR">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="form-message"></div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 La posada del Oso. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
